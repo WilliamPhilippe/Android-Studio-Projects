@@ -1,9 +1,12 @@
 package com.victoriam.william.primeiroapp;
 
+
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.TextView;
+
+import java.util.Random;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -15,11 +18,10 @@ public class MainActivity extends AppCompatActivity {
 
     public void AlternateText(View view){
 
-        TextView textH = (TextView) findViewById(R.id.textHead);
-        textH.setText("<3");
+        TextView textResult = (TextView) findViewById(R.id.textBody);
+        int x = new Random().nextInt(10);
 
-        TextView textB = (TextView) findViewById(R.id.textBody);
-        textB.setText("Amo você!");
+        textResult.setText("O numero selecionado:" + x);
 
     }
 
