@@ -18,9 +18,13 @@ public class MainActivity extends AppCompatActivity {
     public void GenerateLetter(View view){
         TextView fraseOut = (TextView) findViewById(R.id.BoxLetter);
 
-        int x = new Random().nextInt(5);
+        String[] frases = {"O importante não é vencer todos os dias, mas lutar sempre.",
+                "Maior que a tristeza de não haver vencido é a vergonha de não ter lutado!",
+                "Toda ação humana, quer se torne positiva ou negativa, precisa depender de motivação.",
+                "A verdadeira motivação vem de realização, desenvolvimento pessoal, satisfação no trabalho e reconhecimento",
+                "A alegria de fazer o bem é a única felicidade verdadeira."};
 
-        String[] frases = {"Frase bonita", "Frase feia", "Frase pessima", "Another Frase\nTestadno barra n", "Oieeee"};
+        int x = new Random().nextInt( frases.length );
 
         fraseOut.setText( frases[x] );
     }
