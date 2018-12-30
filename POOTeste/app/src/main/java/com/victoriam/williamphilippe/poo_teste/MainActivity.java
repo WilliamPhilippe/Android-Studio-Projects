@@ -10,11 +10,10 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-       Funcionario funcionario = new Funcionario();
-       funcionario.nome = "Maria";
-       funcionario.salario = 920;
-       double salary = funcionario.recuperarSalario( 150.0 );
-       System.out.println("This is your salary: " + (salary) );
+       Cao novoCao = new Cao();
+       novoCao.dormir();
+       novoCao.setCor("Marrom");
+       System.out.println(novoCao.getCor());
 
     }
 }
