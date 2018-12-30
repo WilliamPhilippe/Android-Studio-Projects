@@ -10,14 +10,11 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        Casa minhaCasa = new Casa();
-        minhaCasa.cor = "Vermelho";
-
-        Casa minhaCasa2 = new Casa();
-        minhaCasa2.cor = "Branco";
-
-        System.out.println( minhaCasa.cor );
-        minhaCasa.abrirPorta();
+       Funcionario funcionario = new Funcionario();
+       funcionario.nome = "Maria";
+       funcionario.salario = 920;
+       double salary = funcionario.recuperarSalario( 150.0 );
+       System.out.println("This is your salary: " + (salary) );
 
     }
 }
