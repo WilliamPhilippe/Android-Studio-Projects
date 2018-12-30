@@ -2,6 +2,7 @@ package com.victoriam.williamphilippe.poo_teste;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import com.victoriam.williamphilippe.poo_teste.newClass.Conta;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -10,10 +11,9 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-       Cao novoCao = new Cao();
-       novoCao.dormir();
-       novoCao.setCor("Marrom");
-       System.out.println(novoCao.getCor());
-
+        Conta novaConta = new Conta();
+        novaConta.depositar(200);
+        novaConta.sacar(50);
+        System.out.println(novaConta.getSaldo());
     }
 }
