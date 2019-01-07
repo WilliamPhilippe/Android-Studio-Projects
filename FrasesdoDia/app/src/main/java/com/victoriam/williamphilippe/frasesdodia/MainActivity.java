@@ -22,8 +22,7 @@ public class MainActivity extends AppCompatActivity {
                 "Maior que a tristeza de não haver vencido é a vergonha de não ter lutado!",
                 "Toda ação humana, quer se torne positiva ou negativa, precisa depender de motivação.",
                 "A verdadeira motivação vem de realização, desenvolvimento pessoal, satisfação no trabalho e reconhecimento",
-                "A alegria de fazer o bem é a única felicidade verdadeira."};
-
+                "A alegria de fazer o bem é a única agonia verdadeira."};
         int x = new Random().nextInt( frases.length );
 
         fraseOut.setText( frases[x] );
